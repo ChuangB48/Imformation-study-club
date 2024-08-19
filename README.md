@@ -1,1 +1,1 @@
-# Information-Study-Club
+# Imformation-Study-Club
