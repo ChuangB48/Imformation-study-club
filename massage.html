@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<script src="massage.js"></script>
+<html>
+    <title>
+        massage board
+    </title>
+    <head>
+        <span id="h">
+            留言板
+        </span>
+        <style>
+            #h{
+                font-size: 60px;
+                font-family: DFKai-sb;
+            }
+            #board{
+                position: absolute;
+                left: 0px;
+                top: 75px;
+                border: 1px rgb(250, 130, 130) solid;
+                width: 1438px;
+                height: 600px;
+                word-wrap: break-word;
+                overflow: auto;
+            }
+            #board div{
+                border: 1px rgb(250, 130, 130) solid;
+                width: 1436px;
+            }
+            #enter{
+                position: absolute;
+                top: 750px;
+                left: 50px;
+                height: 20px;
+                width: 500px;
+                transition: 1000ms;
+            }
+            #enter:focus{
+                box-shadow: 0px 0px 20px 15px rgb(250, 130, 130);
+            }
+            #plane{
+                position: absolute;
+                top: 5px;
+                left: 1px;
+                height: 40px;
+            }
+            #sand{
+                position: absolute;
+                top: 740px;
+                left: 600px;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                background-color: rgb(150, 250, 250);
+                transition: 500ms;
+            }
+            #sand:hover{
+                transform: rotate(360deg);
+            }
+            #sand:active{
+                position: absolute;
+                top: 750px;
+                left: 600px;
+            }
+        </style>
+    </head>
+    <body bgcolor="gray">
+        <div id="board">
+
+        </div>
+        <input type="text" id="enter"/>
+        <button id="sand" onclick="javascript: cl()">
+            <img src="2024-08-20_23_24_11-removebg-preview.png" id="plane">
+        </button>
+    </body>
+</html>
