@@ -6,3 +6,6 @@ function submit(){
         }
     }
 }
+function back(){
+    location.href="second-page.html";
+}
