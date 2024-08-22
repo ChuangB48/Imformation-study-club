@@ -15,7 +15,9 @@ for(let a=0;a<cookie.length;a++){
     for(let b=equal+1;b<cookie[a].length;b++){
         ctext+=cookie[a][b];
     }
-    document.getElementById("board").innerHTML+="<div>"+ctext+"</div>";
+    if(cname!="name"){
+        document.getElementById("board").innerHTML+="<div>"+ctext+"</div>";
+    }
 }
 function cl(){
     let s=document.getElementById("enter");
