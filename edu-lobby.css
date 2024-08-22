@@ -1,3 +1,11 @@
+#log{
+    position: absolute;
+    top: 0px;
+    left: 1138px;
+    height: 100px;
+    width: 300px;
+    border: 1px rgb(250, 130, 130) solid;
+}
 #edu{
     position: absolute;
     top: 30vh;
