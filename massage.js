@@ -7,3 +7,6 @@ function cl(){
     let i=document.getElementById("board");
     i.scrollTo(0,i.scrollHeight);
 }
+function ba(){
+    location.href="edu-lobby.html";
+}
