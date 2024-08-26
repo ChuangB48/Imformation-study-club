@@ -1,4 +1,4 @@
-﻿let cookies=document.cookie.split(";");
+let cookies=document.cookie.split(";");
 for(let a=0;a<cookies.length;a++){
     cookies[a].trim();
 }

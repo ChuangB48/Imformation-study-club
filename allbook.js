@@ -1,3 +1,3 @@
-﻿let ab=[
+let ab=[
     {title:"",text:""},
 ];
