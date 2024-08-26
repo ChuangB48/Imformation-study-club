@@ -14,3 +14,6 @@ for(a=0;a<allvalue.length;a++){
         }
     }
 }
+function ba(){
+    location.href="edu-lobby.html";
+}
