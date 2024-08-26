@@ -1,3 +1,3 @@
-function cl(){
-    location.href="enter.html";
+﻿function cl(){
+    location.href="second-page.html";
 }
