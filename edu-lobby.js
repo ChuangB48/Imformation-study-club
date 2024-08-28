@@ -17,3 +17,6 @@ function bo(){
 function ra(){
     location.href="rank.html";
 }
+function so(){
+    location.href="solve.html";
+}
