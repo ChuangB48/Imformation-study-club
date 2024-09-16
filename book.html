@@ -19,23 +19,24 @@
                 left: 0px;
                 width: 1438px;
                 word-wrap: break-word;
+                height: auto;
             }
             #title span{
                 border: 1px rgb(250, 130, 130) solid;
-                font-size: 80px;
+                font-size: 70px;
                 font-family: DFKai-sb;
             }
             #secondtitle span{
-                font-size: 50px;
+                font-size: 40px;
                 font-family: DFKai-sb;
                 color: brown;
             }
             #text span{
-                font-size: 30px;
+                font-size: 20px;
                 font-family: DFKai-sb;
             }
             #code{
-                font-size: 30px;
+                font-size: 20px;
                 border: 1px rgb(250, 130, 130) solid;
                 background-color: gray;
             }
@@ -59,6 +60,7 @@
     </head>
     <body bgcolor="lightgray">
         <div id="board">
+
             <div id="title">
                 <span>
                     C++基礎語法
@@ -124,6 +126,52 @@
                     你是否很期待體驗新的程式語言呢?趕快來跟這世界打招呼吧!
                 </span>
             </div>
+            <div id="secondtitle">
+                <span>
+                    #include &lt;iostream&gt;
+                </span>
+            </div>
+            <div id="text">
+                <span>
+                    #include為引入一個函式庫，函式庫就是一組已經編寫好的程式碼和功能的集合。因使用到和輸入輸出(IO)有關的指令，故需先引入標頭檔iostream。
+                </span>
+            </div>
+            <div id="secondtitle">
+                <span>
+                    using namespace std;
+                </span>
+            </div>
+            <div id="text">
+                <span>
+                    宣告使用命名空間std，如果沒有加上此行，則在使用函式庫的函式須加上它的命名空間，如 std::cout。
+                </span>
+            </div>
+            <div id="secondtitle">
+                <span>
+                    int main()
+                </span>
+            </div>
+            <div id="text">
+                <span>
+                    主程式，我們程式的起點，大括號{}內就是main函式的內容。
+                </span>
+            </div>
+            <div id="code">
+                <span>
+                    cout &lt;&lt; "hello, world" &lt;&lt; endl;
+                </span>
+            </div>
+            <div id="secondtitle">
+                <span>
+                    return 0;
+                </span>
+            </div>
+            <div id="text">
+                <span>
+                    程式成功執行完畢，傳回0給main()。
+                </span>
+            </div>
+
         </div>
         <button id="back" onclick="javascript: ba()">
             <span id="b">
