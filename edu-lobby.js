@@ -8,6 +8,9 @@ for(let a=0;a<cookies.length;a++){
         document.getElementById("log").innerHTML+="<span style='font-size:90px;font-family:DFKai-sb;'>"+detel[1]+"</span>";
     }
 }
+for(let a=0;a<inf.length;a++){
+    document.getElementById("i").innerHTML+="<div>"+inf[a].inform+"</div>";
+}
 function mass(){
     location.href="massage.html";
 }
