@@ -1,4 +1,4 @@
-let inf=[
-    
+const inf=[
+    {inform:"hi"}
 ];
 //{inform:""}
