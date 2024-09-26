@@ -21,24 +21,27 @@
                 word-wrap: break-word;
                 height: auto;
             }
-            #title span{
-                border: 1px rgb(250, 130, 130) solid;
-                font-size: 70px;
-                font-family: DFKai-sb;
+            #board a{
+                position: relative;
+                left: 10px;
+                color: rgb(150, 250, 250);
+                font-size: 30px;
+                text-decoration: none;
+                transition: 500ms;
             }
-            #secondtitle span{
-                font-size: 40px;
-                font-family: DFKai-sb;
-                color: brown;
+            #board a:hover{
+                position: relative;
+                left: 25px;
+                color: rgb(150, 250, 250);
+                font-size: 30px;
+                text-decoration: none;
             }
-            #text span{
-                font-size: 20px;
-                font-family: DFKai-sb;
-            }
-            #code{
-                font-size: 20px;
-                border: 1px rgb(250, 130, 130) solid;
-                background-color: gray;
+            #board a:active,#board a:visited{
+                position: relative;
+                left: 10px;
+                color: rgb(150, 250, 250);
+                font-size: 30px;
+                text-decoration: none;
             }
             #back{
                 position: fixed;
@@ -58,120 +61,8 @@
             }
         </style>
     </head>
-    <body bgcolor="lightgray">
+    <body bgcolor="gray">
         <div id="board">
-
-            <div id="title">
-                <span>
-                    C++基礎語法
-                </span>
-            </div>
-            <div id="secondtitle">
-                <span>
-                    程式語言簡介
-                </span>
-            </div>
-            <div id="text">
-                <span>
-                    使用電腦就一定會用到程式，而程式是以程式語言撰寫的，各種系統軟體及應用軟體，都是運用程式語言開發的，因此學習程式設計是學習電腦重要的課程之一。電腦的硬體只認識機器語言(machine code)，是一串0與1的組合。雖然機器語言的執行效率最快，但是不容易撰寫也不容易閱讀。於是就有了高階語言(high-level language)的發展，如C/C++、Python、Java等。其較接近人類的語言，而高階語言需要透過編譯器(compiler)轉譯成機器語言後才能執行。
-                </span>
-            </div>
-            <div id="secondtitle">
-                <span>
-                    C/C++的歷史
-                </span>
-            </div>
-            <div id="text">
-                <span>
-                    C語言於1969年至1973年間，為了移植與開發UNIX作業系統，由丹尼斯·里奇與肯·湯普遜，以B語言為基礎，在貝爾實驗室設計、開發出來。二十世紀八十年代，C語言應用日漸廣泛。為了避免各開發廠商用的C語言的語法產生差異，美國國家標準局為C語言訂定了一套完整的國際標準語法，稱為ANSI C，作為C語言的標準。與此同時，國際標準化組織也接受該標準為國際標準。因此，ANSI C也同時被稱為ISO C。二十世紀八十年代至今的有關程式開發工具，一般都支援符合ANSI C的語法。
-                    <br>
-                    比雅尼·斯特勞斯特魯普博士在貝爾實驗室工作期間在20世紀80年代發明並實現了C++。起初，這種語言被稱作「C with Classes」（「包含『類』的C語言」），作為C語言的增強版出現。
-                </span>
-            </div>
-            <div id="secondtitle">
-                <span>
-                    第一支C++程式
-                </span>
-            </div>
-            <div id="text">
-                <span>
-                    撰寫程式前，注意以下幾點:
-                    <br>
-                    &diams;字母大小寫是不同的。
-                    <br>
-                    &diams;每個敘述以分號 ";" 結束。
-                    <br>
-                    &diams;使用一個空白鍵或多個空白都是一樣的，程式碼應適度加入空白行或自由換行。
-                    <br>
-                    &diams;副檔名為.cpp。pp指的是plus plus。
-                </span>
-            </div>
-            <div id="code">
-                <span>
-                    #include &lt;iostream&gt;
-                    <br>
-                    using namespace std;
-                    <br>
-                    int main(){
-                    <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;cout &lt;&lt; "hello, world" &lt;&lt; endl;
-                    <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;return 0;
-                    <br>
-                    }
-                </span>
-            </div>
-            <div id="text">
-                <span>
-                    你是否很期待體驗新的程式語言呢?趕快來跟這世界打招呼吧!
-                </span>
-            </div>
-            <div id="secondtitle">
-                <span>
-                    #include &lt;iostream&gt;
-                </span>
-            </div>
-            <div id="text">
-                <span>
-                    #include為引入一個函式庫，函式庫就是一組已經編寫好的程式碼和功能的集合。因使用到和輸入輸出(IO)有關的指令，故需先引入標頭檔iostream。
-                </span>
-            </div>
-            <div id="secondtitle">
-                <span>
-                    using namespace std;
-                </span>
-            </div>
-            <div id="text">
-                <span>
-                    宣告使用命名空間std，如果沒有加上此行，則在使用函式庫的函式須加上它的命名空間，如 std::cout。
-                </span>
-            </div>
-            <div id="secondtitle">
-                <span>
-                    int main()
-                </span>
-            </div>
-            <div id="text">
-                <span>
-                    主程式，我們程式的起點，大括號{}內就是main函式的內容。
-                </span>
-            </div>
-            <div id="code">
-                <span>
-                    cout &lt;&lt; "hello, world" &lt;&lt; endl;
-                </span>
-            </div>
-            <div id="secondtitle">
-                <span>
-                    return 0;
-                </span>
-            </div>
-            <div id="text">
-                <span>
-                    程式成功執行完畢，傳回0給main()。
-                </span>
-            </div>
-
         </div>
         <button id="back" onclick="javascript: ba()">
             <span id="b">
@@ -180,4 +71,5 @@
         </button>
     </body>
 </html>
+<script src="All book.js"></script>
 <script src="book.js"></script>
