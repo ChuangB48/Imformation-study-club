@@ -7,6 +7,12 @@
         }
     }
 }
+window.addEventListener("keypress",function(e){
+    console.log(e.key);
+    if(e.key=="Enter"){
+        submit();
+    }
+},false);
 function back(){
     location.href="second-page.html";
 }
