@@ -35,4 +35,4 @@ const ap=[
     {num:"1121805",name:"吳昀耘",score:0,group:0},//ㄨˊ ㄩㄣˊ ㄩㄣˊ
     {num:"1121817",name:"謝涵萱",score:0,group:0}//ㄒㄧㄝˋ ㄏㄢˊ ㄒㄩㄢ
 ];
-//{num:"",name:"",score:0}
+//{num:"",name:"",score:0,group:}
