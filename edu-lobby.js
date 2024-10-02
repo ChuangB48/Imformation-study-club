@@ -11,7 +11,7 @@ for(let a=0;a<cookies.length;a++){
 for(let a=0;a<inf.length;a++){
     document.getElementById("i").innerHTML+="<div>"+inf[a].inform+"</div>";
 }
-function mass(){
+function mess(){
     location.href="message.html";
 }
 function bo(){
