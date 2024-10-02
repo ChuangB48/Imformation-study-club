@@ -1,11 +1,11 @@
-const WebSocket=require("ws");
-const server=new WebSocket.server({port:6993});
-server.on("connection",function(socket){
-    socket.on("message",function(message){
-        server.clients.array.forEach(clients => {
-            if(client.readystate===WebSocket.OPEN){
-                client.send(message);
-            }
-        });
+const express=require("express");
+const WebSocket=require("ws").Server;
+const server=express().listen(9172,function(){
+});
+const wss=new WebSocket({server});
+wss.on("connection",function(ws){
+    ws.on("message",function(data){
+        data=data.toString();
+        ws.send(data);
     });
 });
