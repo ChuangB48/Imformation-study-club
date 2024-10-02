@@ -12,7 +12,7 @@ for(let a=0;a<inf.length;a++){
     document.getElementById("i").innerHTML+="<div>"+inf[a].inform+"</div>";
 }
 function mass(){
-    location.href="massage.html";
+    location.href="message.html";
 }
 function bo(){
     location.href="book.html";
