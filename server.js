@@ -1,7 +1,8 @@
 const express=require("express");
 const WebSocket=require("ws").Server;
-const server=express().listen(9172,function(){
-    console.log("listening at 9172.");
+const port=9172;
+const server=express().listen(port,function(){
+    console.log("listening at "+port+".");
 });
 const wss=new WebSocket({server});
 let a=0;
