@@ -7,15 +7,10 @@ function cl(){
     let s=document.getElementById("enter");
     if(s.value!=""){
         let cookies=document.cookie;
-        console.log(cookies);
         let name="";
-        for(let a=0;a<cookies.length;a++){
-            let sep=cookies[a].split("=");
-            if(sep[0]=="name"){
-                name=sep[1];
-                break;
-            }
-        }
+        let sep="";
+        sep=cookies.split("=");
+        name=sep[1];
         let type=s.value+"-----"+name;
         socket.send(type);
         s.value="";
