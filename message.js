@@ -1,5 +1,5 @@
 const port=9172;
-const socket=new WebSocket("ws://localhost:"+port);
+const socket=new WebSocket("ws://localhost:"+port.toString);
 socket.onmessage=function(event){
     document.getElementById("board").innerHTML+="<div>"+event.data+"</div>";
 };
