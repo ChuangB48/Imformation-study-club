@@ -1,5 +1,5 @@
 ﻿const port=7428;
-const socket=new WebSocket("ws://localhost:"+port.toString);
+const socket=new WebSocket("ws://localhost:"+port.toString());
 function submit(){
     const p=document.getElementById("name");
     for(let a=0;a<ap.length;a++){
