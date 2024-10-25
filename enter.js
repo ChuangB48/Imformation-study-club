@@ -4,7 +4,8 @@ function submit(){
     const p=document.getElementById("name");
     for(let a=0;a<ap.length;a++){
         if(ap[a].name==p.value){
-            socket.send(p.value);
+            let m=ap[a].num.toString()+";"+ap[a].name;
+            socket.send(m);
             document.cookie="name="+ap[a].name+"; max-age=43200";
             location.href="edu-lobby.html";
         }

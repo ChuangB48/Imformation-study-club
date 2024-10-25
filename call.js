@@ -5,10 +5,9 @@ const server=express().listen(port,function(){
     console.log("listening at "+port+".");
 });
 const wss=new WebSocket({server});
-let a=0;
 wss.on("connection",function(ws){
     ws.on("message",function(data){
-        data=data.toString();
-        console.log("<--",data,"-->");
+        let a=data.toString().split(";");
+        console.log("<--",a[0],"-",a[1],"-->");
     });
 });
