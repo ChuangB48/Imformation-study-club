@@ -7,22 +7,33 @@
         <style>
             #block{
                 position: absolute;
-                top: 30vh;
+                top: 20vh;
                 left: 30vw;
                 border: 1px rgb(150, 250, 250) solid;
-                height: 40vh;
+                height: 60vh;
                 width: 40vw;
                 text-align: center;
             }
             #sen{
-                font-size: 50px;
+                font-size: 40px;
                 font-family: DFKai-sb;
             }
             #name{
                 background-color: gray;
                 transition: 500ms;
             }
+            #pas{
+                font-size: 40px;
+                font-family: DFKai-sb;
+            }
+            #password{
+                background-color: gray;
+                transition: 500ms;
+            }
             #name:focus{
+                box-shadow: 0px 0px 100px 15px rgb(250, 130, 130);
+            }
+            #password:focus{
                 box-shadow: 0px 0px 100px 15px rgb(250, 130, 130);
             }
             #enter{
@@ -46,13 +57,19 @@
     </head>
     <body bgcolor="gray">
         <div id="block">
-            <br><br><br><br><br>
+            <br><br><br>
             <span id="sen">
                 請輸入姓名
             </span>
-            <br><br><br>
+            <br>
             <input type="text" id="name"/>
-            <br><br>
+            <br><br><br><br>
+            <span id="pas">
+                請輸入密碼
+            </span>
+            <br>
+            <input type="text" id="password"/>
+            <br><br><br>
             <button id="enter" onclick="javascript: submit()">
                 <span id="word">
                     enter
@@ -67,4 +84,5 @@
     </body>
     <script src="All Person.js"></script>
     <script src="enter.js"></script>
+    <script src="All Password.js"></script>
 </html>
