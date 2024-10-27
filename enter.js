@@ -5,9 +5,9 @@ function submit(){
     if(n.value==password){
         for(let a=0;a<ap.length;a++){
             if(ap[a].name==p.value){
+                cilentname=ap[a];
                 let m=ap[a].num.toString()+";"+ap[a].name;
                 socket.send(m);
-                document.cookie="name="+ap[a].name+"; max-age=43200";
                 location.href="edu-lobby.html";
             }
         }
