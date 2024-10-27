@@ -6,6 +6,7 @@ function submit(){
         for(let a=0;a<ap.length;a++){
             if(ap[a].name==p.value){
                 cilentname=ap[a].name;
+                console.log(cilentname);
                 let m=ap[a].num.toString()+";"+ap[a].name;
                 socket.send(m);
                 location.href="edu-lobby.html";
