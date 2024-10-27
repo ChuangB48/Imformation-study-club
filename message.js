@@ -5,7 +5,12 @@ socket.onmessage=function(event){
 function cl(){
     let s=document.getElementById("enter");
     if(s.value!=""){
-        let type=s.value+"-----"+cilentname;
+        let cookies=document.cookie;
+        let name="";
+        let sep="";
+        sep=cookies.split("=");
+        name=sep[1];
+        let type=s.value+"-----"+name;
         socket.send(type);
         s.value="";
     }
