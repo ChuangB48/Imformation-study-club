@@ -1,4 +1,4 @@
-﻿const socket=new WebSocket("ws://imformation-study-club-1.onrender.com");
+﻿const socket=new WebSocket("wss://imformation-study-club-1.onrender.com");
 function submit(){
     const p=document.getElementById("name");
     const n=document.getElementById("password");
