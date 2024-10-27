@@ -5,7 +5,7 @@ function submit(){
     if(n.value==password){
         for(let a=0;a<ap.length;a++){
             if(ap[a].name==p.value){
-                cilentname=ap[a];
+                cilentname=ap[a].name;
                 let m=ap[a].num.toString()+";"+ap[a].name;
                 socket.send(m);
                 location.href="edu-lobby.html";
