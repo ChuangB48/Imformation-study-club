@@ -17,6 +17,11 @@ function cl(){
     let i=document.getElementById("board");
     i.scrollTo(0,i.scrollHeight);
 }
+window.addEventListener("keypress",function(e){
+    if(e.key=="Enter"){
+        cl();
+    }
+},false);
 function ba(){
     location.href="edu-lobby.html";
 }
