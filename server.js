@@ -1,6 +1,7 @@
 const express=require("express");
 const WebSocket=require("ws").Server;
 const port=process.env.PORT||80;
+let clients=[];
 const server=express().listen(port,function(){
     console.log("listening at "+port+".");
 });
@@ -16,6 +17,8 @@ wss.on("connection",function(ws){
     ws.on("message",function(data){
         data=data.toString();
         console.log(data);
-        ws.send(data);
+        wss.clients.forEach(function each(client){
+            client.send(data);
+        });
     });
 });
