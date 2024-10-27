@@ -1,4 +1,4 @@
-﻿const port=7428;
+﻿const port=80;
 const socket=new WebSocket("ws://localhost:"+port.toString());
 function submit(){
     const p=document.getElementById("name");
