@@ -1,5 +1,4 @@
-// const port=80;
-const socket=new WebSocket("wss://imformation-study-club.onrender.com/");
+const socket=new WebSocket("wss://imformation-study-club.onrender.com");
 socket.onmessage=function(event){
     document.getElementById("board").innerHTML+="<div>"+event.data+"</div>";
 };
