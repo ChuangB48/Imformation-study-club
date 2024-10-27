@@ -14,3 +14,4 @@ function ra(){
 function so(){
     location.href="solve.html";
 }
+console.log(cilentname);
