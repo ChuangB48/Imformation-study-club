@@ -1,27 +1,23 @@
-﻿const socket=new WebSocket("wss://imformation-study-club.onrender.com");
-socket.onmessage=function(event){
-    document.getElementById("board").innerHTML+="<div>"+event.data+"</div>";
-};
-function cl(){
-    let s=document.getElementById("enter");
-    if(s.value!=""){
-        let cookies=document.cookie;
-        let name="";
-        let sep="";
-        sep=cookies.split("=");
-        name=sep[1];
-        let type=s.value+"-----"+name;
-        socket.send(type);
-        s.value="";
+﻿const socket=new WebSocket("wss://imformation-study-club-1.onrender.com");
+function submit(){
+    const p=document.getElementById("name");
+    const n=document.getElementById("password");
+    if(n.value==password){
+        for(let a=0;a<ap.length;a++){
+            if(ap[a].name==p.value){
+                let m=ap[a].num.toString()+";"+ap[a].name;
+                socket.send(m);
+                document.cookie="name="+ap[a].name+"; max-age=43200";
+                location.href="edu-lobby.html";
+            }
+        }
     }
-    let i=document.getElementById("board");
-    i.scrollTo(0,i.scrollHeight);
 }
 window.addEventListener("keypress",function(e){
     if(e.key=="Enter"){
-        cl();
+        submit();
     }
 },false);
-function ba(){
-    location.href="edu-lobby.html";
+function back(){
+    location.href="second-page.html";
 }
